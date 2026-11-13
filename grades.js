@@ -94,6 +94,7 @@ form.addEventListener("submit", (event) => {
 
   if (Object.keys(errors).length > 0) {
     statusEl.textContent = "Please fix the highlighted fields.";
+    result.hidden = true;
     form.reset();
     return;
   }
